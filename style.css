@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+main{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-text{
+    width: 50%;
+}
+footer{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dates{
+    display: flex;
+    justify-content: space-between ;
+}
+.lesson{
+    width: 20%;
+}
+@media (max-width: 992px){
+    .footer-image{
+        display: none;
+    }
+    .dates{
+        width: 50%;
+    }
+}
+@media (max-width:767px){
+    .about{
+        flex-direction: column;
+    }
+    .about-text{
+        width: 90%;
+    }
+    .footer-image{
+        display: none;
+    }
+    .dates{
+        width: 90%;
+        flex-wrap: wrap;
+    }
+    .lesson{
+        width: 50%;
+    }
+}
